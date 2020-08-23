@@ -21,9 +21,9 @@ function App() {
   async function handleAddRepository() {
     
     const response = await api.post('/repositories', {
-      url: 'https://github.com/guilhermeal/NLW-2_Rocketseat',
-      title: `${Date.now()} Projetos e códigos construídos na Next Level Week #2 da Rocketseat.`,
-      techs: ['Javascript', 'Typescript', 'NodeJS', 'HTML', 'CSS']
+      url: 'https://github.com/rocketseat-education/gostack-template-conceitos-reactjs',
+      title: `${Date.now()} Template para iniciar o desafio de ReactJS do nível de "Conceitos importantes".`,
+      techs: ['Javascript', 'Typescript', 'HTML', 'CSS']
     });
 
     const repository = response.data;
